@@ -8,11 +8,7 @@ import Services from './components/Services/Services'
 import Pricing from './components/Pricing/Pricing'
 import Footer from './components/Footer/Footer'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {faFacebook} from '@fortawesome/free-brands-svg-icons';
-
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
