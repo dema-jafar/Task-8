@@ -18,7 +18,7 @@ export default function Services() {
                         <li>Market research and competitors study.</li>
                     </ul>
                     <h3>We walk with you from A to Z.</h3>
-                    <img src="./../../../public/image/brandingOrange.png" alt="X branding logo" />
+                    <img src="./image/brandingOrange.png" alt="X branding logo" />
                 </div>
                 <div className="serviceItem marketing">
                     <h3>Marketing</h3>
@@ -35,7 +35,7 @@ export default function Services() {
                         <li>Search engine optimization ( SEO ).</li>
                         <li>Social media marketing & campaigns.</li>
                     </ul>
-                    <img src="./../../../public/image/marketing.png" alt="X marketing logo" />
+                    <img src="./image/marketing.png" alt="X marketing logo" />
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ export default function Footer() {
         <footer>
             <div className="footerContent">
                 <div className="footerLogo">
-                    <img src="./../../../public/image/logo.png" alt="footer logo image" />
+                    <img src="./image/logo.png" alt="footer logo image" />
                     <span>.agency</span>
                     <h3>Head Office</h3>
                     <a href="#">Syria - Latakia - grh2+hjx 35.5199518</a>

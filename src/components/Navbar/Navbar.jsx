@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <nav className="navSection">
             <div className="navLogo">
-                <img src="./../../../public/image/logo.svg" alt="logo image" />
+                <img src="./image/logo.svg" alt="logo image" />
                 <h1>Digital marketing agency</h1>
             </div>
             <FontAwesomeIcon icon={faBars} className='bars' onClick={()=>{setIndex(!isActive)}}/>

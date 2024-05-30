@@ -20,7 +20,7 @@ export default function Hero() {
                         So you can take a tour in our website, OR just <b>Press Start :)</b></p>
                 </div>
                 <div className="heroImg">
-                    <img src="./../../../public/image/gameBoy-min.png" alt="game boy image" />   
+                    <img src="./image/gameBoy-min.png" alt="game boy image" />   
                 </div>
             </div>
             <div className="heroFooter">
