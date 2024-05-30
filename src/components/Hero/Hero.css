@@ -56,7 +56,7 @@
 .heroSection .hero .heroImg::after {
     content: "START";
     position: absolute;
-    left: -10rem;
+    left: -9rem;
     bottom: 6rem;
     font-size: 25px;
     font-weight: bold;
