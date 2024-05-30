@@ -1,0 +1,106 @@
+.pricing {
+    padding: 20px;
+    background-color: #282828;
+}
+
+.pricing h2 {
+    width: max-content;
+    margin: 0 auto 50px;
+    color: white;
+}
+
+
+
+.pricing .pricingContent {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pricing .pricingContent .pricingItem {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.pricing .pricingContent .pricingItem::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.pricing .pricingContent .item0::before {
+    background-color: orange;
+}
+
+.pricing .pricingContent .item1::before {
+    background-color: purple;
+}
+
+.pricing .pricingContent .item2::before {
+    background-color: green;
+}
+
+.pricing .pricingContent .item3::before {
+    background-color: blue;
+}
+
+.pricing .pricingContent .pricingItem h3 {
+    margin: 25px 0 5px;
+}
+
+.pricing .pricingContent .pricingItem span {
+    display: block;
+    font-size: 20px;
+    font-weight:900;
+    margin: 20px 0;
+}
+.pricing .pricingContent .pricingItem ul {
+    list-style-type: none;
+}
+
+.pricing .pricingContent .pricingItem ul li {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.pricing .pricingContent .pricingItem .gift {
+    padding: 3px 0;
+    border: 1px solid;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.item0 .gift{
+    color: orange;
+}
+
+.item1 .gift{
+    color: purple;
+}
+
+.item2 .gift{
+    color: green;
+}
+
+.item3 .gift{
+    color: blue;
+}
+
+.pricing .support p {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+

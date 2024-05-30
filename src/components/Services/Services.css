@@ -1,0 +1,81 @@
+.services {
+    padding: 20px 0;
+}
+
+.services h2 {
+    width: max-content;
+    margin: 0 auto 50px;
+}
+
+.services .servicesContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .servicesContent .serviceItem {
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    position: relative;
+}
+
+
+.services .servicesContent .serviceItem h3:first-child {
+    position: relative;
+    width: max-content;
+    padding: 10px 0;
+}
+
+.services .servicesContent .serviceItem h3:first-child::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.services .servicesContent .branding h3:first-child::before {
+    background-color: orange;
+}
+
+.services .servicesContent .marketing h3:first-child::before {
+    background-color: purple;
+}
+
+.services .servicesContent .serviceItem p {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #777;
+}
+
+.services .servicesContent .serviceItem ul {
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.services .servicesContent .serviceItem ul li {
+    margin: 3px 0;
+}
+
+.services .servicesContent .serviceItem img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .services .servicesContent {
+        justify-content: center;
+        gap: 20px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .services .servicesContent .serviceItem img {
+        width: 50px;
+    }
+}

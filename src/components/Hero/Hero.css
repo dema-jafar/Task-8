@@ -1,0 +1,117 @@
+.heroSection {
+    height: max-content;
+
+}
+
+.heroSection .hero {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(40px);
+}
+
+.heroSection .hero .heroText {
+    max-width: 600px;
+}
+
+.heroSection .hero .heroText h2 {
+    color: #ff8500;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.heroSection .hero .heroText p {
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.heroSection .hero .heroImg {
+    background-image: url('./../../../public/image/pattern.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.heroSection .hero .heroImg img {
+    transform: translateY(100px);
+    z-index: 1;
+}
+
+.heroSection .hero .heroImg::before {
+    content: "";
+    position: absolute;
+    left: -8.2rem;
+    bottom: 0.8rem;
+    width: calc(100% + 30px);
+    height: 100%;
+    background-image: url('./../../../public/image/pressStart.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 2;
+}
+
+.heroSection .hero .heroImg::after {
+    content: "START";
+    position: absolute;
+    left: -10rem;
+    bottom: 6rem;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff8500;
+    z-index: 2;
+}
+
+.heroSection .heroFooter {
+    height: 150px;
+    background-image: url('./../../../public/image/footer.svg');
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heroSection .heroFooter .social {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.heroSection .heroFooter .social li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection .heroFooter .social li a {
+    font-size: 20px;
+    color: #ff8500;
+}
+
+@media screen and (max-width:992px) {
+    .heroSection .hero {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .heroSection .hero .heroImg::before,
+    .heroSection .hero .heroImg::after {
+        display: none;
+    }
+
+    .heroSection .heroFooter {
+        height: max-content;
+    }
+    
+    .heroSection .heroFooter .social {
+        margin: 70px 0 10px;
+    }
+}
