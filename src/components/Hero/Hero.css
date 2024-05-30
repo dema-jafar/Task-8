@@ -28,7 +28,7 @@
 }
 
 .heroSection .hero .heroImg {
-    background-image: url('./../../../public/image/pattern.png');
+    background-image: url('./image/pattern.png');
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
@@ -42,12 +42,13 @@
 .heroSection .hero .heroImg::before {
     content: "";
     position: absolute;
-    left: -8.2rem;
+    left: -6.8rem;
     bottom: 0.8rem;
-    width: calc(100% + 30px);
+    width: 100%;
     height: 100%;
-    background-image: url('./../../../public/image/pressStart.svg');
+    background-image: url('./image/pressStart.svg');
     background-repeat: no-repeat;
+    background-size:contain;
     background-position: bottom;
     z-index: 2;
 }
@@ -65,7 +66,7 @@
 
 .heroSection .heroFooter {
     height: 150px;
-    background-image: url('./../../../public/image/footer.svg');
+    background-image: url('./image/footer.svg');
     padding: 20px;
     color: white;
     display: flex;
@@ -97,14 +98,24 @@
 
 @media screen and (max-width:992px) {
     .heroSection .hero {
-        justify-content: center;
+        justify-content: flex-end;
     }
 }
 
 @media screen and (max-width:576px) {
-    .heroSection .hero .heroImg::before,
+    .heroSection .hero .heroImg img {
+        width: 150px;
+        transform: translateY(70px);
+    }
+
+    .heroSection .hero .heroImg::before {
+        left: -3.8rem;
+        bottom: -0.2rem;
+    }
+
     .heroSection .hero .heroImg::after {
-        display: none;
+        left: -6.2rem;
+        bottom: 1.5rem;
     }
 
     .heroSection .heroFooter {

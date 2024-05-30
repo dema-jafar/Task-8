@@ -48,28 +48,32 @@
     bottom: -7px;
     width: 30px;
     height: 3px;
-    background-color: orange;
+    background-color: #ff8500;
 }
 
 @media screen and (max-width:992px) {
     .navSection .bars {
         display: block;
+        z-index: 1;
     }
 
     .navSection .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
         position: absolute;
-        right: 0;
-        top: 60px;
+        right: -1400px;
+        top: 0;
         height: 100vh;
-        padding: 20px;
-        background-color: orange;
-        display: none;
+        width: 50vw;
+        background-color: #ff8500;
+        transition: 0.5s;
     }
 
     .navSection .active {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
+        right: 0;
     }
 
     .navSection .navLinks a {
