@@ -28,7 +28,7 @@
 }
 
 .heroSection .hero .heroImg {
-    background-image: url('./image/pattern.png');
+    background-image: url('./../../../public/image/pattern.png');
     background-repeat: no-repeat;
     background-position: right;
     position: relative;
@@ -46,7 +46,7 @@
     bottom: 0.8rem;
     width: 100%;
     height: 100%;
-    background-image: url('./image/pressStart.svg');
+    background-image: url('./../../../public/image/pressStart.svg');
     background-repeat: no-repeat;
     background-size:contain;
     background-position: bottom;
@@ -66,7 +66,7 @@
 
 .heroSection .heroFooter {
     height: 150px;
-    background-image: url('./image/footer.svg');
+    background-image: url('./../../../public/image/footer.svg');
     padding: 20px;
     color: white;
     display: flex;
